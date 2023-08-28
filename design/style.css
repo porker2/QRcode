@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(212, 45%, 89%);
+}
+
+.contain-main {
+    max-width: 100%; /* Set to 100% to make it responsive */
+    width: 35%; /* Adjust as needed * i fix* */
+    margin: 20px auto; /* Center horizontally and add some margin */
+    text-align: center;
+    border: solid 1px rgb(255, 255, 255); /* Added 1px border */
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px; /* Added padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for a better look */
+}
+
+.cont-img img {
+    width: 100%;
+    max-width: 100%; /* Ensure images don't exceed their container */
+    border-radius: 10px;
+}
+
+.cont-text {
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px; /* Added padding */
+}
+
+.cont-text h3 {
+    color: hsl(218, 44%, 22%);
+    margin: 10px;
+    font-weight: bold;
+}
+
+.cont-text p {
+    color: hsl(220, 15%, 55%);
+    font-size: 15px;
+    margin: 20px 0; /* Adjust vertical margin */
+}
+
+@media (max-width: 430px) {
+    .contain-main {
+        width: 90%; /* Adjust to maintain readability on smaller screens */
+    }
+}
